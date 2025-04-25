@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Innovations | E.B.B.A</title>
+  <link rel="stylesheet" href="homestyles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Picsart_25-04-18_03-29-21-559.png" alt="E.B.B.A Logo" class="logo-img" />
+      </a>
+    </div>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-th-large"></i> Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="onlyyou.html">OnlyYou</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <li><a href="design.html">Design Studio</a></li>
+          <li><a href="consultations.html">Educational Consultations</a></li>
+          <li><a href="tech.html">Tech Innovations</a></li>
+          <li><a href="trust.html">EBBA Trust</a></li>
+          <li><a href="animation.html">Animated Series</a></li>
+        </ul>
+      </li>
+      <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <div class="main">
+
+    <!-- Hero Section -->
+    <section class="hero-image" style="background-image:url('images/download.jpeg');">
+      <div class="hero-text">
+        <h1>Tech Innovations</h1>
+        <p>Bringing cutting-edge technology and creative solutions to transform industries.</p>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="department-overview">
+      <div class="container">
+        <h2>About Our Tech Innovations</h2>
+        <p>At E.B.B.A, our tech innovations department is committed to creating high-impact digital solutions. From mobile apps to AI-powered services, we drive change with groundbreaking technologies that elevate businesses and communities.</p>
+      </div>
+    </section>
+
+    <!-- Features / Services -->
+    <section class="department-features">
+      <div class="container cards">
+        <div class="card">
+          <i class="fas fa-mobile-alt fa-2x"></i>
+          <h3>Mobile App Development</h3>
+          <p>We create user-friendly and impactful mobile apps that meet the needs of today’s mobile-first world.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-brain fa-2x"></i>
+          <h3>AI Solutions</h3>
+          <p>Our AI-powered solutions help businesses make smarter decisions and enhance operational efficiency.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-cloud fa-2x"></i>
+          <h3>Cloud Services</h3>
+          <p>We offer scalable cloud solutions for businesses to store, manage, and access their data securely.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-cogs fa-2x"></i>
+          <h3>Tech Consulting</h3>
+          <p>Get expert guidance on how to integrate and implement the latest technologies into your business operations.</p>
+        </div>
+      </div>
+    </section>
+    
+<!-- Previous and Ongoing Projects -->
+<section class="projects-section books-available">
+  <div class="container">
+    <h2 style="text-align: center; color: yellow; font-size: 2em;">Previous and Ongoing Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Smart Water Metering System</h3>
+        <p>A smart monitoring system for efficient water usage tracking, designed to reduce wastage and encourage sustainability in urban areas.</p>
+        <p style="color: #32cd32;"><strong>Status:</strong> Completed</p>
+      </div>
+      <div class="card">
+        <h3>UZ Off-Campus Accommodation Hub</h3>
+        <p>A digital platform that connects University of Zimbabwe students to safe, affordable housing options around campus.</p>
+        <p style="color: #ffd700;"><strong>Status:</strong> Ongoing</p>
+      </div>
+      <div class="card">
+        <h3>Glen View 7 Fast Food Hub</h3>
+        <p>An innovative food court model offering local cuisine and digital ordering systems for convenience and better service.</p>
+        <p style="color: #ffd700;"><strong>Status:</strong> Ongoing</p>
+      </div>
+      <div class="card">
+        <h3>Smart Solar-Powered Traffic Light</h3>
+        <p>A sustainable traffic control system using solar energy and IoT to reduce congestion and power consumption in urban centers.</p>
+        <p style="color: #ffd700;"><strong>Status:</strong> Ongoing</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Call to Action -->
+    <section class="department-cta">
+      <div class="container">
+        <a href="contact.html" class="cta-btn">Start Your Project</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 E.B.B.A. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/elevatedbeyondbuildingafrica?igsh=a216Zm8yajZ2NTZ4"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>

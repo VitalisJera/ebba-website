@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop | E.B.B.A</title>
+  <link rel="stylesheet" href="homestyles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Picsart_25-04-18_03-29-21-559.png" alt="E.B.B.A Logo" class="logo-img" />
+      </a>
+    </div>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-th-large"></i> Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="onlyyou.html">OnlyYou</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <li><a href="design.html">Design Studio</a></li>
+          <li><a href="consultations.html">Educational Consultations</a></li>
+          <li><a href="tech.html">Tech Innovations</a></li>
+          <li><a href="trust.html">EBBA Trust</a></li>
+          <li><a href="animation.html">Animated Series</a></li>
+        </ul>
+      </li>
+      <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <div class="main">
+
+    <!-- Hero Section -->
+    <section class="hero-image" style="background-image:url('images/Picsart_25-04-18_10-15-08-216.jpg');">
+      <div class="hero-text">
+        <h1>Welcome to Our Shop</h1>
+        <p>Explore our exclusive collections and innovative products</p>
+      </div>
+    </section>
+
+   <!-- Shop Products Section -->
+<section class="shop-products">
+  <div class="container">
+    <h2>Featured Products</h2>
+
+
+    <div class="product-grid" id="productCatalog">
+      <!-- Clothing -->
+      <div class="product-card" data-category="clothing">
+        <h3>Black Hoodie</h3>
+        <img src="images/Black Hoodie.jpg" alt="Black Hoodie" class="product-img">
+        <p>Classic and comfortable black hoodie perfect for all seasons.</p>
+        <span class="price">$15.00</span>
+        <p><strong>Sold:</strong> 10 units</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Warm and soft, fits perfectly!" - TK</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('Black Hoodie')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="clothing">
+        <h3>White Hoodie</h3>
+        <img src="images/White Hoodie.jpg" alt="White Hoodie" class="product-img">
+        <p>Clean, stylish, and versatile hoodie for everyday wear.</p>
+        <span class="price">$15.00</span>
+        <p><strong>Sold:</strong> 8 units</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Really like the material!" - Linda</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('White Hoodide')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="clothing">
+        <h3>Black T-Shirt</h3>
+        <img src="images/Black T shirt.jpg" alt="Black T shirt" class="product-img">
+        <p>Sleek black T-shirt for casual style and comfort.</p>
+        <span class="price">$10.00</span>
+        <p><strong>Sold:</strong> 12 units</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Very breathable!" - Mike</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('Black T shirt')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="clothing">
+        <h3>Navy Blue T-Shirt</h3>
+        <img src="images/Blue T shirt.jpg" alt="Blue T shirt" class="product-img">
+        <p>Bold navy blue T-shirt for a smart look.</p>
+        <span class="price">$10.00</span>
+        <p><strong>Sold:</strong>7 units</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Love the color!" - Jojo</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('Blue T shirt')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="clothing">
+        <h3>White T-Shirt</h3>
+        <img src="images/White T shirt.jpg" alt="White T shirt" class="product-img">
+        <p>Minimalist white T-shirt—timeless and comfy.</p>
+        <span class="price">$10.00</span>
+        <p><strong>Sold:</strong> 10 units</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Simple and clean." - Faith</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('White T shirt')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="clothing">
+        <h3>Pink T-Shirt</h3>
+        <img src="images/Pink T shirt.jpg" alt="Pink T shirt" class="product-img">
+        <p>Fun pink T-shirt to brighten your wardrobe.</p>
+        <span class="price">$10.00</span>
+        <p><strong>Sold:</strong> 7 units</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Bright and vibrant!" - Anna</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+        <!-- Assume this is inside a product card or section -->
+        <input type="number" class="quantity-input" value="1" min="1">
+        <button class="order-btn" onclick="showForm('Pink T shirt')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="clothing">
+        <h3>White Sweater</h3>
+        <img src="images/White sweater.jpg" alt="White Sweater" class="product-img">
+        <p>Elegant white sweater for chilly weather and cozy vibes.</p>
+        <span class="price">$13.00</span>
+        <p><strong>Sold:</strong> 6 units</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Very stylish!" - Max</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('White sweater')">Order Now</button>
+
+
+        </div>
+      </div>
+
+      <!-- Books -->
+      <div class="product-card" data-category="books">
+        <h3>When Nature Calls</h3>
+        <img src="images/When nature calls.jpg" alt="When Nature Calls" class="product-img">
+        <p>An emotional journey of Princess Akua as she battles to save her kingdom.</p>
+        <span class="price">$2.50</span>
+        <p><strong>Sold:</strong> 4 copies</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Powerful story!" - Reader1</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('When nature calls')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="books">
+        <h3>When the Baroness Was Mine</h3>
+        <img src="images/When The Baroness was mine.jpg" alt="When the Baroness was Mine" class="product-img">
+        <p>A historical romance brimming with passion and secrets.</p>
+        <span class="price">$2.50</span>
+        <p><strong>Sold:</strong> 3 copies</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Beautiful writing!" - Anna B.</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('When the Baroness')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="books">
+        <h3>The Duke's Despair: A Lady's Decision</h3>
+        <img src="images/The duke's despair.png" alt="The Duke's Despair: A lady's decision" class="product-img">
+        <p>Drama, intrigue, and a lady’s bold choice.</p>
+        <span class="price">$2.50</span>
+        <p><strong>Sold:</strong> 8 copies</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Couldn’t stop turning pages." - ReaderX</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('Duke_Despair')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="books">
+        <h3>Sofia's Diary</h3>
+        <img src="images/Sofia's Diary.jpg" alt="Sofia's Diary" class="product-img">
+        <p>A poignant coming-of-age tale. A girl is introduced to a whole new world</p>
+        <span class="price">$2.50</span>
+        <p><strong>Sold:</strong> 5 copies</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Relatable and heartwarming." - Lilo</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('Sofia_s Diary')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="books">
+        <h3>Legacy</h3>
+        <img src="images/Legacy.jpg" alt="Legacy" class="product-img">
+        <p>Destiny, choices, and the rise of a legend.</p>
+        <span class="price">$2.50</span>
+        <p><strong>Sold:</strong> 5 copies</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Epic storyline!" - Zee</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('Legacy')">Order Now</button>
+
+
+        </div>
+      </div>
+
+      <!-- Tech -->
+      <div class="product-card" data-category="tech">
+        <h3>ZIMSEC Projects (Sale)</h3>
+        <img src="images/zimsec projects.png" alt="Zimsec Projects" class="product-img">
+        <p>Ready-made and custom ZIMSEC projects.</p>
+        <span class="price">$10.00 <del>$15.00</del></span>
+        <p><strong>Sold:</strong> 10 orders</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Lifesaver for tight deadlines!" - IT Guy</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+         <!-- Assume this is inside a product card or section -->
+         <input type="number" class="quantity-input" value="1" min="1">
+         <button class="order-btn" onclick="showForm('CS Project Editing')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="tech">
+        <h3>ZIMSEC Online 1-to-1 Consultation</h3>
+        <img src="images/consulattions.jpg" alt="Zimsec online" class="product-img">
+        <p>Live academic guidance from experts for exam prep.</p>
+        <span class="price">$5.00</span>
+        <p><strong>Sold:</strong> 15 sessions</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Very helpful session!" - Tapiwa</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('Consultation')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="tech">
+        <h3>How to Ace ZIMSEC (E-Book)</h3>
+        <p>Essential tips and tricks to conquer ZIMSEC exams.</p>
+        <span class="price">$3.00</span>
+        <p><strong>Sold:</strong> 60 copies</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Straightforward and effective!" - Lisa</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('How to Ace Zimsec')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="tech">
+        <h3>Branding Package</h3>
+        <img src="images/Picsart_25-04-18_03-34-34-624.jpg" alt="Branding Package" class="product-img">
+        <p>Everything you need to build your brand identity.</p>
+        <span class="price">$10.00</span>
+        <p><strong>Sold:</strong> 4 packages</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Transformed my brand!" - Tanya</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('Branding Package')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="tech">
+        <h3>Poster Design</h3>
+        <img src="images/Picsart_25-02-17_22-33-05-575.jpg" alt="Poster Designs" class="product-img">
+        <p>Custom poster designs for events or businesses.</p>
+        <span class="price">$2.00</span>
+        <p><strong>Sold:</strong> 11 posters</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Eye-catching and professional." - Josh</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+          <!-- Assume this is inside a product card or section -->
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="order-btn" onclick="showForm('Poster Design')">Order Now</button>
+
+
+        </div>
+      </div>
+      <div class="product-card" data-category="tech">
+        <h3>Logo Design</h3>
+        <img src="images/Picsart_25-04-02_14-37-40-148.png" alt="logo designs" class="product-img">
+        <p>Unique, memorable logos tailored to your brand.</p>
+        <span class="price">$2.00</span>
+        <p><strong>Sold:</strong> 5 logos</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Love our new logo!" - Brian</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+         <!-- Assume this is inside a product card or section -->
+         <input type="number" class="quantity-input" value="1" min="1">
+         <button class="order-btn" onclick="showForm('Logo Design')">Order Now</button>
+
+
+        </div>
+        </div>
+  
+      <div class="product-card" data-category="tech">
+        <h3>Website Development</h3>
+        <img src="images/wed develop.png" alt="website Developmnet" class="product-img">
+        <p>Affordable and functional websites for individuals or small businesses.</p>
+        <span class="price">$10.00</span>
+        <p><strong>Sold:</strong> 25 sites</p>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+          <p>"Quick and great service!" - Tatenda</p>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button class="comment-btn">Post</button>
+         <!-- Assume this is inside a product card or section -->
+         <input type="number" class="quantity-input" value="1" min="1">
+         <button class="order-btn" onclick="showForm('Website Development')">Order Now</button>
+         </div>
+   </div>
+ 
+    
+    </section>
+     <!-- Footer Section -->
+     <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 E.B.B.A. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/elevatedbeyondbuildingafrica?igsh=a216Zm8yajZ2NTZ4"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+      <div class="form-section" id="orderForm">
+        <h2>Place Your Order</h2>
+        <form action="https://formsubmit.co/elevatedbeyondbuildingafrica@gmail.com" method="POST">
+          <!-- Form Fields Stay the Same -->
+          <input type="hidden" name="_next" value="thankyou.html"> <!-- Optional redirect after submission -->
+          <input type="hidden" name="_captcha" value="false">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="product">Product:</label>
+            <input type="text" id="product" name="product" readonly required>
+    
+            <label for="message">Message / Details:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Send</button>
+        </form>
+      
+    <script>
+      function showForm(productName) {
+          const form = document.getElementById('orderForm');
+          form.classList.add('active');
+          document.getElementById('product').value = productName;
+          form.scrollIntoView({ behavior: "smooth" });
+          document.getElementById('confirmation').style.display = 'none'; // hide message if shown before
+      }
+  
+      // Confirmation Message Handler
+      document.getElementById('order-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // stop the form from submitting normally
+  
+          // Show confirmation message
+          document.getElementById('confirmation').style.display = 'block';
+  
+          // Optionally hide the form itself
+          setTimeout(() => {
+              document.getElementById('orderForm').classList.remove('active');
+          }, 3000);
+  
+          // Reset form
+          this.reset();
+      });
+  </script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
+  
+</body>
+</html>

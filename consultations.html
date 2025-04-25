@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educational Consultations | E.B.B.A</title>
+  <link rel="stylesheet" href="homestyles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Picsart_25-04-18_03-29-21-559.png" alt="E.B.B.A Logo" class="logo-img" />
+      </a>
+    </div>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-th-large"></i> Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="onlyyou.html">OnlyYou</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <li><a href="design.html">Design Studio</a></li>
+          <li><a href="consultations.html">Educational Consultations</a></li>
+          <li><a href="tech.html">Tech Innovations</a></li>
+          <li><a href="trust.html">EBBA Trust</a></li>
+          <li><a href="animation.html">Animated Series</a></li>
+        </ul>
+      </li>
+      <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <div class="main">
+
+    <!-- Hero Section -->
+    <section class="hero-image" style="background-image:url('images/OIP\ \(3\).jpeg');">
+      <div class="hero-text">
+        <h1>Educational Consultations</h1>
+        <p>Helping ZIMSEC students excel with expert guidance and personalized support.</p>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="department-overview">
+      <div class="container">
+        <h2>About Our Educational Consultations</h2>
+        <p>Our team provides paid consultations for ZIMSEC students, designed to help you improve your academic performance. We specialize in tutoring, guidance on exam strategies, and project assistance across various subjects.</p>
+      </div>
+    </section>
+
+    <!-- Features / Services -->
+    <section class="department-features">
+      <div class="container cards">
+        <div class="card">
+          <i class="fas fa-chalkboard-teacher fa-2x"></i>
+          <h3>Subject-specific Tutoring</h3>
+          <p>We offer one-on-one tutoring sessions to help you understand challenging subjects, from Mathematics to Computer Science.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-calendar-check fa-2x"></i>
+          <h3>Exam Strategies</h3>
+          <p>Learn effective strategies for approaching exams, managing time, and handling stress during the test period.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-file-alt fa-2x"></i>
+          <h3>Project Assistance</h3>
+          <p>Get help with your ZIMSEC projects, from planning to execution, ensuring you meet all academic requirements.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="department-cta">
+      <div class="container">
+        <a href="contact.html" class="cta-btn">Book a Consultation</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 E.B.B.A. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/elevatedbeyondbuildingafrica?igsh=a216Zm8yajZ2NTZ4"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

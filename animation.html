@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Studio | E.B.B.A</title>
+  <link rel="stylesheet" href="homestyles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Picsart_25-04-18_03-29-21-559.png" alt="E.B.B.A Logo" class="logo-img" />
+      </a>
+    </div>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-th-large"></i> Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="onlyyou.html">OnlyYou</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <li><a href="design.html">Design Studio</a></li>
+          <li><a href="consultations.html">Educational Consultations</a></li>
+          <li><a href="tech.html">Tech Innovations</a></li>
+          <li><a href="trust.html">EBBA Trust</a></li>
+          <li><a href="animation.html">Animated Series</a></li>
+        </ul>
+      </li>
+      <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <div class="main">
+
+    <!-- Hero Section -->
+    <section class="hero-image" style="background-image:url('images/OIP\ \(5\).jpeg');">
+      <div class="hero-text">
+        <h1>Animated Studio</h1>
+        <p>Bringing stories to life with creativity and innovation.</p>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="department-overview">
+      <div class="container">
+        <h2>About Our Animated Studio</h2>
+        <p>At EBBA Animated Studio, we specialize in creating high-quality animated content for diverse audiences. Our team of skilled animators, storytellers, and designers bring imaginative worlds to life through cutting-edge animation techniques. From short films to full-length series, we strive to create visuals that captivate and entertain.</p>
+      </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="department-features">
+      <div class="container cards">
+        <div class="card">
+          <i class="fas fa-film fa-2x"></i>
+          <h3>Short Films</h3>
+          <p>Explore our collection of short animated films that tell captivating stories in unique visual styles.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-tv fa-2x"></i>
+          <h3>Animated Series</h3>
+          <p>Our animated series feature compelling characters and imaginative plots that appeal to both young and adult audiences.</p>
+          <a href="https://www.youtube.com/watch?v=tBdchw49GHk&t=5s" class="cta-btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-paint-brush fa-2x"></i>
+          <h3>Custom Animation Services</h3>
+          <p>Need animation for your brand, project, or idea? We offer custom animation services tailored to your needs.</p>
+          <a href="services.html" class="cta-btn">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+  
+<!-- Projects Section -->
+<section class="projects-showcase">
+  <div class="container">
+    <h2 class="section-title">Our Featured Projects</h2>
+    <p class="section-subtitle">Powerful stories brought to life through animation, inspired by African identity and innovation.</p>
+    
+    <div class="project-gallery">
+      <div class="project-card">
+        <img src="images/Picsart_25-03-01_14-39-42-637.jpg" alt="Zim Young Elites" />
+        <h3>Zim Young Elites</h3>
+        <p>A vibrant animation spotlighting exceptional young Zimbabweans rewriting their future with talent, vision, and courage.</p>
+        <p style="color: #cdca32;"><strong>Status:</strong> Ongoing</p>
+      </div>
+
+      <div class="project-card">
+        <img src="images/Picsart_25-02-14_19-18-28-173.jpg" alt="kaLife keKumodza" />
+        <h3>kaLife keKumodza</h3>
+        <p>An emotionally charged story of a resilient teen navigating life's toughest questions in the heart of an African village.</p>
+        <a href="https://www.youtube.com/watch?v=tBdchw49GHk&t=5s" class="cta-btn">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Collaboration Section -->
+    <section class="department-collaboration">
+      <div class="container">
+        <h2>Collaborate with Us</h2>
+        <p>We love collaborating with other creatives, brands, and storytellers. Whether you need animation for a commercial, an educational project, or entertainment, our team is ready to help bring your ideas to life.</p>
+        <a href="contact.html" class="cta-btn">Let's Work Together</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 E.B.B.A. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/elevatedbeyondbuildingafrica?igsh=a216Zm8yajZ2NTZ4"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | E.B.B.A</title>
+  <link rel="stylesheet" href="homestyles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Picsart_25-04-18_03-29-21-559.png" alt="E.B.B.A Logo" class="logo-img" />
+      </a>
+    </div>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-th-large"></i> Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="onlyyou.html">OnlyYou</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <li><a href="design.html">Design Studio</a></li>
+          <li><a href="consultations.html">Educational Consultations</a></li>
+          <li><a href="tech.html">Tech Innovations</a></li>
+          <li><a href="trust.html">EBBA Trust</a></li>
+          <li><a href="animation.html">Animated Series</a></li>
+        </ul>
+      </li>
+      <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <div class="main">
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h3>Our Office</h3>
+        <p>7618 7th way, Glen View 7 Harare, Zimbabwe</p>
+        <p>Email: <a href="mailto:elevatedbeyondbuildingafrica.com">elevatedbeyondbuildingafrica.com</a></p>
+        <p>Phone: +263 78 706 3444</p>
+      </div>
+      
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <form action="https://formsubmit.co/elevatedbeyondbuildingafrica@gmail.com" method="POST">
+          <!-- Form Fields Stay the Same -->
+          <input type="hidden" name="_next" value="thankyou.html"> <!-- Optional redirect after submission -->
+          <input type="hidden" name="_captcha" value="false">
+          
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          
+            <button type="submit" class="cta-btn">Send Message</button>
+          </form>
+          
+        <div id="confirmationMessage" class="confirmation" style="display: none;">
+          <i class="fas fa-check-circle"></i>
+          <h4>Thank you for contacting us!</h4>
+          <p>We'll get back to you as soon as possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional: Add a Google Map (embed your office location) -->
+    <section class="location-section">
+      <h3>Our Location</h3>
+      <div class="map-container">
+        <!-- You can replace the iframe link with your office's actual location -->
+        <iframe
+  src="https://www.google.com/maps?q=7618+7th+Way,+Glen+View+7,+Harare,+Zimbabwe&output=embed"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 E.B.B.A. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/elevatedbeyondbuildingafrica?igsh=a216Zm8yajZ2NTZ4"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E.B.B.A - Admin</title>
+  <style>
+    textarea { width: 100%; height: 500px; }
+    button { padding: 10px 20px; margin-top: 10px; }
+  </style>
+  <link rel="stylesheet" href="homestyles.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Horizontal Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="home.html">
+        <img src="images/Picsart_25-04-18_03-29-21-559.png" alt="E.B.B.A Logo" class="logo-img" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-th-large"></i> Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="onlyyou.html">OnlyYou (Clothing)</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <li><a href="design.html">Design Studio</a></li>
+          <li><a href="consultations.html">Educational Consultations</a></li>
+          <li><a href="tech.html">Tech Innovations</a></li>
+          <li><a href="trust.html">EBBA Trust</a></li>
+          <li><a href="animation.html">Animated Series</a></li>
+        </ul>
+      </li>
+      <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+<body>
+  <h1>Admin: E.B.B.A JSON Editor</h1>
+  <p>Paste your updated JSON below and save it manually.</p>
+  <textarea id="jsonEditor"></textarea>
+<br>
+<button onclick="saveToLocal()">💾 Save Locally</button>
+<button onclick="loadFromLocal()">📂 Load from Local</button>
+<button onclick="downloadJSON()">⬇️ Download JSON</button>
+
+<script>
+  async function fetchJSON() {
+    const res = await fetch("products.json");
+    const data = await res.json();
+    document.getElementById("jsonEditor").value = JSON.stringify(data, null, 2);
+  }
+
+  function saveToLocal() {
+    const jsonData = document.getElementById("jsonEditor").value;
+    localStorage.setItem("productJSONBackup", jsonData);
+    alert("✅ JSON saved to localStorage!");
+  }
+
+  function loadFromLocal() {
+    const data = localStorage.getItem("productJSONBackup");
+    if (data) {
+      document.getElementById("jsonEditor").value = data;
+    } else {
+      alert("⚠️ No local backup found.");
+    }
+  }
+
+  function downloadJSON() {
+    const blob = new Blob(
+      [document.getElementById("jsonEditor").value],
+      { type: "application/json" }
+    );
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "products.json";
+    a.click();
+  }
+
+  fetchJSON();
+</script>
+
+
+  <script>
+    async function fetchJSON() {
+      const res = await fetch("products.json");
+      const data = await res.json();
+      document.getElementById("jsonEditor").value = JSON.stringify(data, null, 2);
+    }
+
+    function downloadJSON() {
+      const blob = new Blob(
+        [document.getElementById("jsonEditor").value],
+        { type: "application/json" }
+      );
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "products.json";
+      a.click();
+    }
+
+    fetchJSON();
+  </script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

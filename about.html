@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E.B.B.A - About</title>
+  <link rel="stylesheet" href="aboutstyles.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Horizontal Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Picsart_25-04-18_03-29-21-559.png" alt="E.B.B.A Logo" class="logo-img" />
+      </a>
+    </div>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-th-large"></i> Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="onlyyou.html">OnlyYou</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <li><a href="design.html">Design Studio</a></li>
+          <li><a href="consultations.html">Educational Consultations</a></li>
+          <li><a href="tech.html">Tech Innovations</a></li>
+          <li><a href="trust.html">EBBA Trust</a></li>
+          <li><a href="animation.html">Animated Series</a></li>
+        </ul>
+      </li>
+      <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Hero Section with Tagline -->
+  <section class="hero-image">
+    <div class="hero-text">
+      <h1>Create, Elevate, Inspire</h1>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-container">
+        <h1>About E.B.B.A</h1>
+        <p>E.B.B.A (Elevated Beyond Building Africa) is a multi-functional company that aims to innovate across various industries including fashion, technology, education, and publishing. We are dedicated to creating opportunities for young individuals to thrive in the digital and creative world.</p>
+      </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="mission">
+      <div class="mission-container">
+        <h2>Our Mission</h2>
+        <p>Our mission is to elevate creativity and inspire innovation. We are driven by the belief that young people can change the world, and we aim to empower them by providing resources, opportunities, and mentorship.</p>
+      </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="values">
+      <div class="values-container">
+        <h2>Our Values</h2>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Innovation</li>
+          <li><i class="fas fa-check-circle"></i> Empowerment</li>
+          <li><i class="fas fa-check-circle"></i> Creativity</li>
+          <li><i class="fas fa-check-circle"></i> Excellence</li>
+          <li><i class="fas fa-check-circle"></i> Integrity</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 E.B.B.A. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/elevatedbeyondbuildingafrica?igsh=a216Zm8yajZ2NTZ4"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

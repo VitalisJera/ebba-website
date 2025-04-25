@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OnlyYou | E.B.B.A</title>
+  <link rel="stylesheet" href="homestyles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- Navbar (same as on all pages) -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Picsart_25-04-18_03-29-21-559.png" alt="E.B.B.A Logo" class="logo-img" />
+      </a>
+    </div>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-th-large"></i> Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="onlyyou.html">OnlyYou</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <li><a href="design.html">Design Studio</a></li>
+          <li><a href="consultations.html">Educational Consultations</a></li>
+          <li><a href="tech.html">Tech Innovations</a></li>
+          <li><a href="trust.html">EBBA Trust</a></li>
+          <li><a href="animation.html">Animated Series</a></li>
+        </ul>
+      </li>
+      <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Main Content Wrapper -->
+  <div class="main">
+
+    <!-- Dept Hero (reuse .hero-image/.hero-text) -->
+    <section class="hero-image" style="background-image:url('images/A_stylish_rooftop_fashion_runway_in_Harare_s_Avondale_area_at_sunset_The_runway_features_a_smooth_tiled_surface_with_soft_city_lights_twinkling_in_the_background_Decorative_plants_are_pl.png');">
+      <div class="hero-text">
+        <h1>OnlyYou</h1>
+        <p>Fashion with a message — express your true self</p>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="department-overview">
+      <div class="container">
+        <h2>About OnlyYou</h2>
+        <p>OnlyYou is our flagship clothing brand celebrating individuality through limited‑edition drops. Each collection is designed to empower and inspire.</p>
+      </div>
+    </section>
+
+    <!-- Key Features / Services -->
+    <section class="department-features">
+      <div class="container cards">
+        <div class="card">
+          <i class="fas fa-tshirt fa-2x"></i>
+          <h3>Limited Editions</h3>
+          <p>Exclusive runs ensuring you stand out from the crowd.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-tags fa-2x"></i>
+          <h3>Premium Quality</h3>
+          <p>Ethically sourced fabrics with attention to every stitch.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-truck fa-2x"></i>
+          <h3>Worldwide Shipping</h3>
+          <p>Delivering style from Zimbabwe across the globe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="department-cta">
+      <div class="container">
+        <a href="shop.html" class="cta-btn">Browse the Latest Collection</a>
+      </div>
+    </section>
+
+    <!-- Footer (same on all pages) -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 E.B.B.A. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/elevatedbeyondbuildingafrica?igsh=a216Zm8yajZ2NTZ4"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

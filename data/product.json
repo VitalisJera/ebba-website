@@ -1,0 +1,91 @@
+[
+    {
+      "id": "clothing1",
+      "category": "Clothing",
+      "name": "Black Hoodie",
+      "price": 15,
+      "unitsSold": 10,
+      "image": "images/Black Hoodie.jpg"
+    },
+    {
+      "id": "clothing2",
+      "category": "Clothing",
+      "name": "White Hoodie",
+      "price": 15,
+      "unitsSold": 8,
+      "image": "images/White Hoodie.jpg"
+    },
+    {
+      "id": "clothing3",
+      "category": "Clothing",
+      "name": "Black T-Shirt",
+      "price": 10,
+      "unitsSold": 12,
+      "image": "images/Black T shirt.jpg"
+    },
+    {
+      "id": "clothing4",
+      "category": "Clothing",
+      "name": "Navy Blue T-Shirt",
+      "price": 10,
+      "unitsSold": 7,
+      "image": "images/Blue T shirt.jpg"
+    },
+    {
+      "id": "clothing5",
+      "category": "Clothing",
+      "name": "White T-Shirt",
+      "price": 10,
+      "unitsSold": 10,
+      "image": "images/White T shirt.jpg"
+    },
+    {
+      "id": "clothing6",
+      "category": "Clothing",
+      "name": "Pink T-Shirt",
+      "price": 10,
+      "unitsSold": 7,
+      "image": "images/Pink T shirt.jpg"
+    },
+    {
+      "id": "clothing7",
+      "category": "Clothing",
+      "name": "White Sweater",
+      "price": 13,
+      "unitsSold": 6,
+      "image": "images/White sweater.jpg"
+    },
+    {
+      "id": "book1",
+      "category": "Books",
+      "name": "When Nature Calls",
+      "price": 2.5,
+      "unitsSold": 4,
+      "image": "images/When nature calls.jpg"
+    },
+    {
+      "id": "book2",
+      "category": "Books",
+      "name": "When the Baroness Was Mine",
+      "price": 2.5,
+      "unitsSold": 3,
+      "image": "images/When The Baroness was mine.jpg"
+    },
+    {
+      "id": "book3",
+      "category": "Books",
+      "name": "The Duke's Despair: A Lady's Decision",
+      "price": 2.5,
+      "unitsSold": 8,
+      "image": "images/The duke's despair.png"
+    },
+    {
+      "id": "book4",
+      "category": "Books",
+      "name": "Sofia's Diary",
+      "price": 2.5,
+      "unitsSold": 0,
+      "image": "images/Sofia's Diary.jpg"
+    }
+  ]
+  

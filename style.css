@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+ /* — Set up the background image — */
+ body {
+    background-image: url('images/Picsart_25-04-18_14-10-47-847.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Keep it centered */
+    align-items: center;
+    margin: 0;
+    color: white;
+  }
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill; /* Stretches image to fill without gaps */
+    z-index: -1;
+  }
+  
+  .login-container {
+    transform: translateX(350px); /* Pushes it 50px to the right */
+  }
+  
+  
+  /* — Glass effect for the form — */
+  .login-container {
+    background: rgba(255, 255, 255, 0.1);  /* Slightly white background for transparency */
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    backdrop-filter: blur(10px);  /* Creates the glass effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  /* Subtle shadow for 3D effect */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  
+    /* 💡 Neon glow effect */
+    box-shadow:
+      0 0 10px #39ff14,
+      0 0 20px #39ff14,
+      0 0 30px #39ff14,
+      0 0 40px #39ff14;
+  }
+  
+  /* — Form elements styling — */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #4caf50;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* — Login button — */
+  button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* — Loader style — */
+  .loader {
+    display: none;
+    margin-top: 10px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #4caf50;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* — Social Login Buttons — */
+  .social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  /* Social Button Style */
+  .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    transition: opacity 0.2s ease;
+  }
+  
+  .social-btn i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  
+  /* Google */
+  .social-btn.google {
+    background-color: #db4437;
+  }
+  
+  .social-btn.google:hover {
+    opacity: 0.9;
+  }
+  
+  /* Facebook */
+  .social-btn.facebook {
+    background-color: #3b5998;
+  }
+  
+  .social-btn.facebook:hover {
+    opacity: 0.9;
+  }
+  
+  /* Instagram (gradient) */
+  .social-btn.instagram {
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+  }
+  
+  .social-btn.instagram:hover {
+    opacity: 0.9;
+  }
+  
+  /* — Bottom text link — */
+  .bottom-text {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .bottom-text a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  .bottom-text a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Register css */
+
+  .register-container {
+    transform: translateX(350px); /* Pushes it 50px to the right */
+    background-color: #ffffff10;
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  
+    /* 💡 Neon glow effect */
+    box-shadow:
+      0 0 10px #39ff14,
+      0 0 20px #39ff14,
+      0 0 30px #39ff14,
+      0 0 40px #39ff14;
+  }
+  
+  .register-container h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #16a085;
+  }
+  
+  .teleport-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle, #39ff14 0%, black 80%);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+  }
+  
+  .teleport-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+    animation: teleportEffect 1s ease forwards;
+  }
+  
+  @keyframes teleportEffect {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  

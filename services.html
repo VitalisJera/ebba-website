@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services | Publishing | E.B.B.A</title>
+  <link rel="stylesheet" href="homestyles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Picsart_25-04-18_03-29-21-559.png" alt="E.B.B.A Logo" class="logo-img" />
+      </a>
+    </div>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-th-large"></i> Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="onlyyou.html">OnlyYou</a></li>
+          <li><a href="publishing.html">Publishing</a></li>
+          <li><a href="design.html">Design Studio</a></li>
+          <li><a href="consultations.html">Educational Consultations</a></li>
+          <li><a href="tech.html">Tech Innovations</a></li>
+          <li><a href="trust.html">EBBA Trust</a></li>
+          <li><a href="animation.html">Animated Series</a></li>
+        </ul>
+      </li>
+      <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Services Hero -->
+  <section class="hero-image" style="background-image:url('images/OIP.jpeg');">
+    <div class="hero-text">
+      <h1>Our Publishing Services</h1>
+      <p>Turning your vision into volumes. Discover what we can do for your story.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>What We Offer</h2>
+    <div class="service-cards">
+
+      <div class="service-card">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>Manuscript Review</h3>
+        <p>We evaluate your writing and provide insightful feedback for improvement before editing.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-edit"></i>
+        <h3>Editing & Proofreading</h3>
+        <p>Our skilled editors fine-tune your content for clarity, grammar, and impact.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Cover Design</h3>
+        <p>We craft stunning, professional book covers that grab readers' attention.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-file-alt"></i>
+        <h3>Interior Formatting</h3>
+        <p>Get print-ready and digital-ready formats that look great across all devices and pages.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Marketing & PR</h3>
+        <p>We promote your book online and offline to help you reach your target audience.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-truck"></i>
+        <h3>Global Distribution</h3>
+        <p>Your book made available in stores and on major platforms like Amazon and more.</p>
+      </div>
+
+    </div>
+  </section>
+  
+<!-- Books Available -->
+<section class="books-available">
+    <h2>Books We've Published</h2>
+    <div class="cards">
+  
+      <div class="card">
+        <img src="images/Picsart_25-01-19_23-28-42-126.jpg" alt="When Nature Calls Book Cover">
+        <h3>When Nature Calls</h3>
+        <p>A tale of survival, unity, and the untamed force of the wild.</p>
+      </div>
+  
+      <div class="card">
+        <img src="images/Picsart_25-04-21_14-15-07-711.jpg" alt="When the Baroness Was Mine Book Cover">
+        <h3>When the Baroness Was Mine</h3>
+        <p>Love, betrayal, and redemption in the courts of nobility.</p>
+      </div>
+  
+      <div class="card">
+        <img src="images/Picsart_25-01-19_22-54-43-999.png" alt="The Duke's Despair Book Cover">
+        <h3>The Duke’s Despair</h3>
+        <p>A lady’s decision could alter a kingdom forever.</p>
+      </div>
+  
+      <div class="card">
+        <img src="images/Picsart_25-04-22_00-06-25-892.jpg" alt="Sophia's Diary Book Cover">
+        <h3>Sophia’s Diary</h3>
+        <p>One girl’s journal reveals a world of secrets and silent battles.</p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 E.B.B.A. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/elevatedbeyondbuildingafrica?igsh=a216Zm8yajZ2NTZ4"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
+
+</body>
+</html>
